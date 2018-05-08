@@ -1,0 +1,74 @@
+ #two{
+    right: calc((100% - (100% - 700px)/2) + 3px);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    
+}
+#seven{
+
+    left:  calc((100% - (100% - 700px)/2) + 3px);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+
+}
+/*
+#content{
+    display: flex;
+}
+#one{
+    width: 700px;
+    margin: 0 auto;
+    
+}
+#five{
+    width: 200px;
+    float: left;
+}
+#six{
+    width: 250px;
+    float: left;
+}
+
+#three-four{
+    width: 250px;
+    margin:0 auto;
+    float: left;
+    align-self: center;
+} */
+#one, #two, #three, #four, #five,#six,#seven,#eight,#nine{
+    border: 3px solid black;
+}
+
+body{
+    margin:0;
+}
+#one, #eight, #nine{
+    margin: auto;
+}
+
+#one, #eight, #nine{
+    width: 700px;
+    height: 150px;
+}
+#three, #four{
+    min-width: 244px;
+    height: 70px;
+}
+
+#five{
+    min-width: 294px;
+    height: 146px;
+}
+#six{
+    min-width: 150px;
+}
+
+.flex-one{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
