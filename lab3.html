@@ -1,9 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <title>lab3</title>
+    <style>
+     #two{
+    right: calc((100% - (100% - 700px)/2) + 3px);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
     
+}
+#seven{
+
+    left:  calc((100% - (100% - 700px)/2) + 3px);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+
+}
+#two{
+    background-color: pink;
+}
+#seven{
+    background-color: aqua;
+}
+#one{
+    background-color: orangered; 
+}
+#three{
+    background-color: orange;
+}
+#four{
+    background-color: yellow;
+}
+#five{
+    background-color: limegreen;
+}
+#six{
+    background-color: skyblue;
+}
+#eight{
+    background-color: blue;
+}
+#nine{
+    background-color: violet;
+}
+
+p{
+    margin:0px;
+}
+#one, #two, #three, #four, #five,#six,#seven,#eight,#nine{
+    border: 3px solid black;
+}
+img{
+   height: 140px;
+   width: 150px; 
+    margin: auto;
+}
+
+body{
+    margin:0;
+}
+#one, #eight, #nine{
+    margin: auto;
+    
+    
+}
+#one{
+    font-size: 22px;
+}
+#eight, #nine{
+    font-size: 18px;
+}
+#one, #eight, #nine{
+    min-width: 700px;
+    max-width: 700px;
+    height: 150px;
+}
+#three, #four{
+    /* position: fixed; */
+    min-width: 244px;
+    max-width: 244px;
+    height: 70px;
+    left: 0;
+}
+
+#five{
+    min-width: 294px;
+    max-width: 294px;
+    height: 146px;
+}
+#six{
+    min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    
+}
+#six p{
+    display: flex;    
+}
+
+.flex-one{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* width: 700px; */
+    left: 1000px;
+}
+
+@media screen and (max-device-width: 720px){
+    body *{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        flex-grow: 1;
+        width: auto;
+        font-size: medium;
+        
+    }
+    p{
+        font-size: 18px;
+    }
+    #row1 div,#one, #two, #three, #four, #five,#six,#seven,#eight,#nine{
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        
+        font-size: medium;
+        border-radius: 10px;
+    }
+    #two, #seven{
+        visibility: hidden;
+    }
+}</style>
     <link rel="stylesheet" type="text/css" media="screen" href="lab3.css" />
     <!-- <script src="main.js"></script> -->
 </head>
