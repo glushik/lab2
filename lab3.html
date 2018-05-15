@@ -4,84 +4,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <title>lab3</title>
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="lab3.css" />
+    <!-- <script src="main.js"></script> -->
     <style>
-     #two{
+        .two{
     right: calc((100% - (100% - 700px)/2) + 3px);
-    position: absolute;
-    bottom: 0;
-    top: 0;
     left: 0;
+    background-color: pink;
     
 }
-#seven{
-
+.seven{
+    right: 0;
     left:  calc((100% - (100% - 700px)/2) + 3px);
+    background-color: aqua;
+}
+.beach{
     position: absolute;
     bottom: 0;
     top: 0;
-    right: 0;
-
 }
-#two{
-    background-color: pink;
-}
-#seven{
-    background-color: aqua;
-}
-#one{
-    background-color: orangered; 
-}
-#three{
+.three{
     background-color: orange;
 }
-#four{
+.four{
     background-color: yellow;
 }
-#five{
-    background-color: limegreen;
-}
-#six{
-    background-color: skyblue;
-}
-#eight{
+.eight{
     background-color: blue;
 }
-#nine{
+.nine{
     background-color: violet;
 }
 
-p{
-    margin:0px;
-}
-#one, #two, #three, #four, #five,#six,#seven,#eight,#nine{
+
+.all{
     border: 3px solid black;
 }
 img{
-   height: 140px;
-   width: 150px; 
+    height: 140px;
+    width: 150px; 
     margin: auto;
 }
 
-body{
+p, body{
     margin:0;
 }
-#one, #eight, #nine{
+.center-blocks{
     margin: auto;
-    
-    
-}
-#one{
-    font-size: 22px;
-}
-#eight, #nine{
-    font-size: 18px;
-}
-#one, #eight, #nine{
     min-width: 700px;
     max-width: 700px;
     height: 150px;
 }
-#three, #four{
+.one{
+    font-size: 22px;
+    background-color: orangered; 
+}
+.eight, .nine{
+    font-size: 18px;
+}
+
+.inner-blocks{
     /* position: fixed; */
     min-width: 244px;
     max-width: 244px;
@@ -89,18 +72,19 @@ body{
     left: 0;
 }
 
-#five{
+.five{
     min-width: 294px;
     max-width: 294px;
     height: 146px;
+    background: greenyellow;
 }
-#six{
+.six{
     min-width: 150px;
     max-width: 150px;
     display: flex;
-    
+    background-color: skyblue;
 }
-#six p{
+.six p{
     display: flex;    
 }
 
@@ -112,48 +96,47 @@ body{
     left: 1000px;
 }
 
-@media screen and (max-device-width: 720px){
+
+
+
+@media only screen and (max-width:715px){
     body *{
         display: flex;
         flex-direction: column;
         margin: auto;
         flex-grow: 1;
-        width: auto;
-        font-size: medium;
         
     }
-    p{
-        font-size: 18px;
-    }
-    #row1 div,#one, #two, #three, #four, #five,#six,#seven,#eight,#nine{
+    
+    .row1 div,.all{
         min-width: 100%;
         max-width: 100%;
+        width: 100%;
         height: auto;
-        
         font-size: medium;
         border-radius: 10px;
     }
-    #two, #seven{
+    .beach{
         visibility: hidden;
     }
-}</style>
-    <link rel="stylesheet" type="text/css" media="screen" href="lab3.css" />
-    <!-- <script src="main.js"></script> -->
+}
+
+    </style>
 </head>
 <body>
-    <div id = "two">2</div>
-    <div id = "seven">7</div>
-    <div id = "one" class = "flex-one">ОЛЕГ ВИННИК - Популярный украинский певец и покоритель женских сердец ухватил кусочек славы не только в Украине, но и Германии. За ним охотились многие зарубежные педагоги по вокалу, но достался он самому Джону Леману. Олег Винник довольно скрытный человек, редко дает интервью и тщательно охраняет свою личную жизнь от журналистов.</div>
+    <div class = "two all beach">2</div>
+    <div class = "seven all beach">7</div>
+    <div class = "one flex-one all center-blocks">ОЛЕГ ВИННИК - Популярный украинский певец и покоритель женских сердец ухватил кусочек славы не только в Украине, но и Германии. За ним охотились многие зарубежные педагоги по вокалу, но достался он самому Джону Леману. Олег Винник довольно скрытный человек, редко дает интервью и тщательно охраняет свою личную жизнь от журналистов.</div>
     
-    <div id = "row1" class = "flex-one">
+    <div class = "flex-one row1">
         <div>
-            <div id = "three">
+            <div class = "three all inner-blocks">
                <p>Профессия Певец</p>
                 <p>Дата рождения 31 июля 1973</p>
                 <p>Рост и вес 175 см и 74 кг</p>
 
             </div>
-            <div id = "four">
+            <div class = "four all inner-blocks">
                 <p>Хиты:</p>
                 <p><a href = "https://www.youtube.com/watch?v=TVxFtpHM3IE">Нино</a></p>
                 <p><a href = "https://www.youtube.com/watch?v=YvFwjiJPVEA">Волчица</a></p>
@@ -161,15 +144,15 @@ body{
                 
             </div>
         </div>
-        <div id ="five">В Германии Олег Винник всерьез занимался бодибилдингом, но был вынужден прекратить тренировки из-за роли Жана Вальжана, чтобы не смущать зрителей своими накаченными бицепсами. Вернувшись в родную Украину, певец не прекратил концертную деятельность в Германии.</div>
-        <div id ="six" >
+        <div class ="five all">В Германии Олег Винник всерьез занимался бодибилдингом, но был вынужден прекратить тренировки из-за роли Жана Вальжана, чтобы не смущать зрителей своими накаченными бицепсами. Вернувшись в родную Украину, певец не прекратил концертную деятельность в Германии.</div>
+        <div class ="six all" >
             <img src= "img.jpg" alt = "фото лолега винника">
         </div>
         
     </div>
     
-    <div id ="eight" class = "flex-one">После окончания училища, Олег поступил на работу в Черкасскую филармонию, где в 20 лет одаренный юноша стал ее солистом. В рамках программы культурного обмена Винник проходил стажировку в Германии, где по некоторым данным сначала работал гувернеров в одной из семей, учил немецкий язык, а уже потом с подачи своей подружки решился попробовать в свои силы в Люнебургском театре.</div>
-    <div id ="nine" class = "flex-one">Певец начал исполнять основные партии практически во всех крупных спектаклях: «Тоска», «Паганини», «Олег», «Поцелуй меня, Кейт!», «Собор Парижской Богоматери», «Титани», «Отверженные» и других. Несмотря на казалось бы идеальные вокальные способности, Олег продолжал учиться и не отказался от уроков по вокалу американского преподавателя Джона Лемана.
+    <div class = "eight flex-one all center-blocks">После окончания училища, Олег поступил на работу в Черкасскую филармонию, где в 20 лет одаренный юноша стал ее солистом. В рамках программы культурного обмена Винник проходил стажировку в Германии, где по некоторым данным сначала работал гувернеров в одной из семей, учил немецкий язык, а уже потом с подачи своей подружки решился попробовать в свои силы в Люнебургском театре.</div>
+    <div class = "nine flex-one all center-blocks">Певец начал исполнять основные партии практически во всех крупных спектаклях: «Тоска», «Паганини», «Олег», «Поцелуй меня, Кейт!», «Собор Парижской Богоматери», «Титани», «Отверженные» и других. Несмотря на казалось бы идеальные вокальные способности, Олег продолжал учиться и не отказался от уроков по вокалу американского преподавателя Джона Лемана.
 
     </div>
     
