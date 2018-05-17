@@ -1,6 +1,7 @@
+language: generic
 deploy:
   provider: s3
-  access_key_id: AKIAJHSF2534CSVRTEOQ
+  access_key_id: AKIAIQRBTT367K5X4C7A
   secret_access_key: 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
   bucket: git-to-amazon-s3-outputbucket-2d5ah8mghcn6	
   on:
