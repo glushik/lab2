@@ -4,142 +4,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8" />
     <title>lab3</title>
-    
+
+     
     <link rel="stylesheet" type="text/css" media="screen" href="lab3.css" />
     <!-- <script src="main.js"></script> -->
-    <style>
-        .two{
-    right: calc((100% - (100% - 700px)/2) + 3px);
-    left: 0;
-    background-color: pink;
-    
-}
-.seven{
-    right: 0;
-    left:  calc((100% - (100% - 700px)/2) + 3px);
-    background-color: aqua;
-}
-.beach{
-    position: absolute;
-    bottom: 0;
-    top: 0;
-}
-.three{
-    background-color: orange;
-}
-.four{
-    background-color: yellow;
-}
-.eight{
-    background-color: blue;
-}
-.nine{
-    background-color: violet;
-}
-
-
-.all{
-    border: 3px solid black;
-}
-img{
-    height: 140px;
-    width: 150px; 
-    margin: auto;
-}
-
-p, body{
-    margin:0;
-}
-.center-blocks{
-    margin: auto;
-    min-width: 700px;
-    max-width: 700px;
-    height: 150px;
-}
-.one{
-    font-size: 22px;
-    background-color: orangered; 
-}
-.eight, .nine{
-    font-size: 18px;
-}
-
-.inner-blocks{
-    /* position: fixed; */
-    min-width: 244px;
-    max-width: 244px;
-    height: 70px;
-    left: 0;
-}
-
-.five{
-    min-width: 294px;
-    max-width: 294px;
-    height: 146px;
-    background: greenyellow;
-}
-.six{
-    min-width: 150px;
-    max-width: 150px;
-    display: flex;
-    background-color: skyblue;
-}
-.six p{
-    display: flex;    
-}
-
-.flex-one{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    /* width: 700px; */
-    left: 1000px;
-}
-
-
-
-
-@media only screen and (max-width:715px){
-    body *{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        flex-grow: 1;
-        
-    }
-    body{
-        position: fixed;
-    }
-    
-    .row1 div,.all{
-        min-width: 100%;
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-        font-size: medium;
-        border-radius: 10px;
-    }
-    .beach{
-        visibility: hidden;
-    }
-}
-
-    </style>
 </head>
 <body>
-    <div class = "two all beach">2</div>
-    <div class = "seven all beach">7</div>
-    <div class = "one flex-one all center-blocks">ОЛЕГ ВИННИК - Популярный украинский певец и покоритель женских сердец ухватил кусочек славы не только в Украине, но и Германии. За ним охотились многие зарубежные педагоги по вокалу, но достался он самому Джону Леману. Олег Винник довольно скрытный человек, редко дает интервью и тщательно охраняет свою личную жизнь от журналистов.</div>
+    <div id = "two">2</div>
+    <div id = "seven">7</div>
+    <div id = "one" class = "flex-one">ОЛЕГ ВИННИК - Популярный украинский певец и покоритель женских сердец ухватил кусочек славы не только в Украине, но и Германии. За ним охотились многие зарубежные педагоги по вокалу, но достался он самому Джону Леману. Олег Винник довольно скрытный человек, редко дает интервью и тщательно охраняет свою личную жизнь от журналистов.</div>
     
-    <div class = "flex-one row1">
+    <div id = "row1" class = "flex-one">
         <div>
-            <div class = "three all inner-blocks">
+            <div id = "three">
                <p>Профессия Певец</p>
                 <p>Дата рождения 31 июля 1973</p>
-                <p>Рост и вес 175 см и 174 кг</p>
+                <p>Рост и вес 175 см и 74 кг</p>
 
             </div>
-            <div class = "four all inner-blocks">
+            <div id = "four">
                 <p>Хиты:</p>
                 <p><a href = "https://www.youtube.com/watch?v=TVxFtpHM3IE">Нино</a></p>
                 <p><a href = "https://www.youtube.com/watch?v=YvFwjiJPVEA">Волчица</a></p>
@@ -147,14 +30,18 @@ p, body{
                 
             </div>
         </div>
-        <div class ="five all">В Германии Олег Винник всерьез занимался бодибилдингом, но был вынужден прекратить тренировки из-за роли Жана Вальжана, чтобы не смущать зрителей своими накаченными бицепсами. Вернувшись в родную Украину, певец не прекратил концертную деятельность в Германии.</div>
-        <div class ="six all" >
+        <div id ="five">В Германии Олег Винник всерьез занимался бодибилдингом, но был вынужден прекратить тренировки из-за роли Жана Вальжана, чтобы не смущать зрителей своими накаченными бицепсами. Вернувшись в родную Украину, певец не прекратил концертную деятельность в Германии.</div>
+        <div id ="six" >
             <img src= "img.jpg" alt = "фото лолега винника">
         </div>
         
     </div>
-    <div class = "eight flex-one all center-blocks">После окончания училища, Олег поступил на работу в Черкасскую филармонию, где в 20 лет одаренный юноша стал ее солистом. В рамках программы культурного обмена Винник проходил стажировку в Германии, где по некоторым данным сначала работал гувернеров в одной из семей, учил немецкий язык, а уже потом с подачи своей подружки решился попробовать в свои силы в Люнебургском театре.</div>
-    <div class = "nine flex-one all center-blocks">Певец начал исполнять основные партии практически во всех крупных спектаклях: «Тоска», «Паганини», «Олег», «Поцелуй меня, Кейт!», «Собор Парижской Богоматери», «Титани», «Отверженные» и других. Несмотря на казалось бы идеальные вокальные способности, Олег продолжал учиться и не отказался от уроков по вокалу американского преподавателя Джона Лемана.
+    
+    <div id ="eight" class = "flex-one">После окончания училища, Олег поступил на работу в Черкасскую филармонию, где в 20 лет одаренный юноша стал ее солистом. В рамках программы культурного обмена Винник проходил стажировку в Германии, где по некоторым данным сначала работал гувернеров в одной из семей, учил немецкий язык, а уже потом с подачи своей подружки решился попробовать в свои силы в Люнебургском театре.</div>
+    <div id ="nine" class = "flex-one">Певец начал исполнять основные партии практически во всех крупных спектаклях: «Тоска», «Паганини», «Олег», «Поцелуй меня, Кейт!», «Собор Парижской Богоматери», «Титани», «Отверженные» и других. Несмотря на казалось бы идеальные вокальные способности, Олег продолжал учиться и не отказался от уроков по вокалу американского преподавателя Джона Лемана.
+
     </div>
+    
+    
 </body>
 </html>
