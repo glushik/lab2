@@ -1,103 +1,63 @@
- #two{
+.two{
     right: calc((100% - (100% - 700px)/2) + 3px);
-    position: fixed;
-    bottom: 0;
-    top: 0;
     left: 0;
+    background-color: pink;
     
 }
-#seven{
-
-    left:  calc((100% - (100% - 700px)/2) + 3px);
-    position: fixed;
-    bottom: 0;
-    top: 0;
+.seven{
     right: 0;
-
-}
-#two{
-    background-color: pink;
-}
-#seven{
+    left:  calc((100% - (100% - 700px)/2) + 3px);
     background-color: aqua;
 }
-#one{
-    background-color: orangered; 
+.beach{
+    position: absolute;
+    bottom: 0;
+    top: 0;
 }
-#three{
+.three{
     background-color: orange;
 }
-#four{
+.four{
     background-color: yellow;
 }
-#five{
-    background-color: limegreen;
+.four a{
+    margin: 0;
 }
-#six{
-    background-color: skyblue;
-}
-#eight{
+.eight{
     background-color: blue;
 }
-#nine{
+.nine{
     background-color: violet;
 }
-/*
-#content{
-    display: flex;
-}
-#one{
-    width: 700px;
-    margin: 0 auto;
-    
-}
-#five{
-    width: 200px;
-    float: left;
-}
-#six{
-    width: 250px;
-    float: left;
-}
 
-#three-four{
-    width: 250px;
-    margin:0 auto;
-    float: left;
-    align-self: center;
-} */
-p{
-    margin:0px;
-}
-#one, #two, #three, #four, #five,#six,#seven,#eight,#nine{
+
+.all{
     border: 3px solid black;
 }
 img{
-   height: 140px;
-   width: 150px; 
+    height: 140px;
+    width: 150px; 
     margin: auto;
 }
 
-body{
+p, body{
     margin:0;
 }
-#one, #eight, #nine{
+.center-blocks{
     margin: auto;
-    
-    
-}
-#one{
-    font-size: 22px;
-}
-#eight, #nine{
-    font-size: 18px;
-}
-#one, #eight, #nine{
     min-width: 700px;
     max-width: 700px;
     height: 150px;
 }
-#three, #four{
+.one{
+    font-size: 22px;
+    background-color: orangered; 
+}
+.eight, .nine{
+    font-size: 18px;
+}
+
+.inner-blocks{
     /* position: fixed; */
     min-width: 244px;
     max-width: 244px;
@@ -105,18 +65,19 @@ body{
     left: 0;
 }
 
-#five{
+.five{
     min-width: 294px;
     max-width: 294px;
     height: 146px;
+    background: greenyellow;
 }
-#six{
+.six{
     min-width: 150px;
     max-width: 150px;
     display: flex;
-    
+    background-color: skyblue;
 }
-#six p{
+.six p{
     display: flex;    
 }
 
@@ -128,6 +89,9 @@ body{
     left: 1000px;
 }
 
+
+
+
 @media only screen and (max-width:715px){
     body *{
         display: flex;
@@ -136,8 +100,10 @@ body{
         flex-grow: 1;
         
     }
-    
-    #row1 div,#one, #two, #three, #four, #five,#six,#seven,#eight,#nine{
+    body{
+        position: fixed;
+    }
+    .row1 div,.all{
         min-width: 100%;
         max-width: 100%;
         width: 100%;
@@ -145,8 +111,8 @@ body{
         font-size: medium;
         border-radius: 10px;
     }
-    #two, #seven{
-        display: none;
+    .beach{
+        visibility: hidden;
     }
 }
 
@@ -157,119 +123,9 @@ body{
 
 
 
-
-
-
-/* 
-<style>
-#two{
-    right: calc((100% - (100% - 700px)/2) + 3px);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    
-}
-#seven{
-
-    left:  calc((100% - (100% - 700px)/2) + 3px);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    right: 0;
-
-}
-#two{
-    background-color: pink;
-}
-#seven{
-    background-color: aqua;
-}
-#one{
-    background-color: orangered; 
-}
-#three{
-    background-color: orange;
-}
-#four{
-    background-color: yellow;
-}
-#five{
-    background-color: limegreen;
-}
-#six{
-    background-color: skyblue;
-}
-#eight{
-    background-color: blue;
-}
-#nine{
-    background-color: violet;
-}
-
-p{
-    margin:0px;
-}
-#one, #two, #three, #four, #five,#six,#seven,#eight,#nine{
-    border: 3px solid black;
-}
-img{
-   height: 140px;
-   width: 150px; 
-    margin: auto;
-}
-
-body{
-    margin:0;
-}
-#one, #eight, #nine{
-    margin: auto;
-    
-    
-}
-#one{
-    font-size: 22px;
-}
-#eight, #nine{
-    font-size: 18px;
-}
-#one, #eight, #nine{
-    min-width: 700px;
-    max-width: 700px;
-    height: 150px;
-}
-#three, #four{
-    /* position: fixed; 
-    min-width: 244px;
-    max-width: 244px;
-    height: 70px;
-    left: 0;
-}
-
-#five{
-    min-width: 294px;
-    max-width: 294px;
-    height: 146px;
-}
-#six{
-    min-width: 150px;
-    max-width: 150px;
-    display: flex;
-    
-}
-#six p{
-    display: flex;    
-}
-
-.flex-one{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    /* width: 700px; 
-    left: 1000px;
-}
-
-@media screen and (max-device-width: 720px){
+/* @media screen and
+ /* (max-device-width: 720px) or  
+ (max-width: 720px){
     body *{
         display: flex;
         flex-direction: column;
@@ -293,4 +149,4 @@ body{
     #two, #seven{
         visibility: hidden;
     }
-}</style> */
+} */
