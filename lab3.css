@@ -25,9 +25,12 @@
 }
 .eight{
     background-color: blue;
+    height: 160px;
 }
 .nine{
     background-color: violet;
+    height: 175px;
+    
 }
 
 
@@ -47,11 +50,12 @@ p, body{
     margin: auto;
     min-width: 700px;
     max-width: 700px;
-    height: 150px;
+    height: 172px;
 }
 .one{
     font-size: 22px;
     background-color: orangered; 
+    height: 160px;
 }
 .eight, .nine{
     font-size: 18px;
@@ -88,9 +92,6 @@ p, body{
     /* width: 700px; */
     left: 1000px;
 }
-
-
-
 
 @media only screen and (max-width:715px){
     body *{
