@@ -100,9 +100,7 @@ p, body{
         flex-grow: 1;
         
     }
-    body{
-        position: fixed;
-    }
+   
     .row1 div,.all{
         min-width: 100%;
         max-width: 100%;
