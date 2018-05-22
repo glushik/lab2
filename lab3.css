@@ -10,7 +10,7 @@
     background-color: aqua;
 }
 .beach{
-    position: absolute;
+    position: fixed;
     bottom: 0;
     top: 0;
 }
@@ -112,7 +112,7 @@ p, body{
         border-radius: 10px;
     }
     .beach{
-        visibility: hidden;
+        display: none;
     }
 }
 
