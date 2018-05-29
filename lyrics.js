@@ -22,7 +22,7 @@ var butjson = document.getElementById('JSONBUT'),
 reqjson = new XMLHttpRequest();
 butjson.onclick = function () {
 //запрос для json файла
-reqjson.open('GET', 'src/songs.json', false);
+reqjson.open('GET', 'songs.json', false);
 reqjson.send();
 if (reqjson.status != 200) {//выводим ошибки
     alert(reqjson.status + ': ' + reqjson.statusText);
@@ -53,10 +53,10 @@ var lol = new XMLHttpRequest();
             var i,
                 //создаём тамблицу для полученных данных
                 xmlDoc = lol.responseXML,
-                table = '<tr><th>Счастье</th><th>Волчица</th><th>Нино</th></tr>',
+                table = '<tr><th>Название</th><th>Год</th><th>Ссылка</th></tr>',
                 x = xmlDoc.getElementsByTagName('song');
             for (i = 0; i < x.length; i++) {
-                table += '<tr><td>' + x[i].getElementsByTagName('name')[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName('ref')[0].childNodes[0].nodeValue + '</td><td><a class="ulightbox" href="' + x[i].getElementsByTagName('year')[0].childNodes[0].nodeValue + '" title="Нажмите, чтобы скачать">тут</a></td></tr>';
+                table += '<tr><td>' + x[i].getElementsByTagName('name')[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName('year')[0].childNodes[0].nodeValue + '</td><td><a class="ulightbox" href="' + x[i].getElementsByTagName('ref')[0].childNodes[0].nodeValue + '" title="Нажмите, чтобы скачать">тут</a></td></tr>';
             }
             document.getElementById('kek').innerHTML = table;//выводим таблицу
         }
