@@ -1,74 +1,151 @@
- #two{
+.two{
     right: calc((100% - (100% - 700px)/2) + 3px);
-    position: absolute;
-    bottom: 0;
-    top: 0;
     left: 0;
+    background-color: pink;
     
 }
-#seven{
-
+.seven{
+    right: 0;
     left:  calc((100% - (100% - 700px)/2) + 3px);
-    position: absolute;
+    background-color: aqua;
+}
+.beach{
+    position: fixed;
     bottom: 0;
     top: 0;
-    right: 0;
-
 }
-/*
-#content{
-    display: flex;
+.three{
+    background-color: orange;
 }
-#one{
-    width: 700px;
-    margin: 0 auto;
+.four{
+    background-color: yellow;
+}
+.four a{
+    margin: 0;
+}
+.eight{
+    background-color: blue;
+    height: 160px;
+}
+.nine{
+    background-color: violet;
+    height: 175px;
     
 }
-#five{
-    width: 200px;
-    float: left;
-}
-#six{
-    width: 250px;
-    float: left;
-}
 
-#three-four{
-    width: 250px;
-    margin:0 auto;
-    float: left;
-    align-self: center;
-} */
-#one, #two, #three, #four, #five,#six,#seven,#eight,#nine{
+
+.all{
     border: 3px solid black;
 }
-
-body{
-    margin:0;
-}
-#one, #eight, #nine{
+img{
+    height: 140px;
+    width: 150px; 
     margin: auto;
 }
 
-#one, #eight, #nine{
-    width: 700px;
-    height: 150px;
+p, body{
+    margin:0;
 }
-#three, #four{
-    min-width: 244px;
-    height: 70px;
+.center-blocks{
+    margin: auto;
+    min-width: 700px;
+    max-width: 700px;
+    height: 172px;
+}
+.one{
+    font-size: 22px;
+    background-color: orangered; 
+    height: 160px;
+}
+.eight, .nine{
+    font-size: 18px;
 }
 
-#five{
-    min-width: 294px;
-    height: 146px;
+.inner-blocks{
+    /* position: fixed; */
+    min-width: 244px;
+    max-width: 244px;
+    height: 70px;
+    left: 0;
 }
-#six{
+
+.five{
+    min-width: 294px;
+    max-width: 294px;
+    height: 146px;
+    background: greenyellow;
+}
+.six{
     min-width: 150px;
+    max-width: 150px;
+    display: flex;
+    background-color: skyblue;
+}
+.six p{
+    display: flex;    
 }
 
 .flex-one{
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    /* width: 700px; */
+    left: 1000px;
 }
+
+@media only screen and (max-width:715px){
+    body *{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        flex-grow: 1;
+        
+    }
+   
+    .row1 div,.all{
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        font-size: medium;
+        border-radius: 10px;
+    }
+    .beach{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+/* @media screen and
+ /* (max-device-width: 720px) or  
+ (max-width: 720px){
+    body *{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        flex-grow: 1;
+        width: auto;
+        font-size: medium;
+        
+    }
+    p{
+        font-size: 18px;
+    }
+    #row1 div,#one, #two, #three, #four, #five,#six,#seven,#eight,#nine{
+        min-width: 100%;
+        max-width: 100%;
+        height: auto;
+        
+        font-size: medium;
+        border-radius: 10px;
+    }
+    #two, #seven{
+        visibility: hidden;
+    }
+} */
